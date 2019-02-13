@@ -42,7 +42,7 @@ EmpowerLVAPManager::EmpowerLVAPManager() :
 }
 
 EmpowerLVAPManager::~EmpowerLVAPManager() {
-}
+}ciao //edit by LL to generate an error
 
 int EmpowerLVAPManager::initialize(ErrorHandler *) {
 	_timer.initialize(this);
