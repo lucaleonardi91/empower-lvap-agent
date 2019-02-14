@@ -119,6 +119,7 @@ struct empower_hello : public empower_header {
     void set_wtp(EtherAddress wtp)   { memcpy(_wtp, wtp.data(), 6); }
 } CLICK_SIZE_PACKED_ATTRIBUTE;
 
+//edit by LL => I can add the application requests of the node in empower_probe_request or in empower_assoc_request
 /* probe request packet format */
 struct empower_probe_request : public empower_header {
   private:
@@ -169,6 +170,7 @@ public:
     EtherAddress sta() { return EtherAddress(_sta); }
 } CLICK_SIZE_PACKED_ATTRIBUTE;
 
+//edit by LL => I can add the application requests of the node in empower_probe_request or in empower_assoc_request
 /* association request packet format */
 struct empower_assoc_request : public empower_header {
   private:
