@@ -281,6 +281,7 @@ void EmpowerLVAPManager::send_auth_request(EtherAddress src, EtherAddress bssid)
 
 }
 
+//edit by LL => I can add the application requirements of the node
 void EmpowerLVAPManager::send_probe_request(EtherAddress src, String ssid, EtherAddress hwaddr, int channel, empower_bands_types band, empower_bands_types supported_band) {
 
 	WritablePacket *p = Packet::make(sizeof(empower_probe_request) + ssid.length());
